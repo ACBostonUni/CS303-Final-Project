@@ -1,0 +1,1 @@
+{/*The File for the data types that will be put to and pulled from the Db*/}

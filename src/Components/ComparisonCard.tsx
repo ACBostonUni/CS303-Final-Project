@@ -1,0 +1,1 @@
+{/*The comparison card component housing the 2 elements, the question, and the voting buttons which will call the fuction to update the vote count*/}
