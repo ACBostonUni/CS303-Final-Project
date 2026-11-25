@@ -72,6 +72,27 @@ export const VoteButton = styled.button`
     background-color: lightskyblue;
     border: transparent;
     border-radius: 30px;
-;
+
 
 `
+
+export const QuestionContainer = styled.div` 
+    
+`
+
+export const QuestionDiv = styled.div`
+
+`
+
+export const OptionsDiv = styled.div`
+
+
+`
+
+export const OptionsText = styled.p`
+
+
+`
+
+export const QuestionsText = styled.p``
+

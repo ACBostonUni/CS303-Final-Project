@@ -1,13 +1,28 @@
 "use client"
-import {StyledCardDiv, VoteButtonContainer} from "@/Styles";
+import {
+    OptionsDiv,
+    OptionsText,
+    QuestionContainer, QuestionDiv,
+    QuestionsText,
+    StyledCardDiv,
+    VoteButton,
+    VoteButtonContainer
+} from "@/Styles";
 
 {/*The comparison card component housing the 2 elements, the question, and the voting buttons which will call the fuction to update the vote count*/}
 
 import {useState} from "react";
+import {Comparison} from "@/types";
 
-
-
-    export default function ComparisonCard(){
+    // Need to take in Id, the strings of the question, and the strings of optionA and B Basically just the data type object
+    export default function ComparisonCard({
+                 id,
+            optionA,
+            optionB,
+            question,
+            votedCountA,
+            votedCountB
+    }: Comparison) {
 
 
         const [button1Voted, setVoteA] = useState(false);
@@ -41,9 +56,43 @@ import {useState} from "react";
 
             <StyledCardDiv>
 
+                <QuestionContainer>
+
+                    <OptionsDiv>
+
+                        <OptionsText>
+
+                        </OptionsText>
+
+                    </OptionsDiv>
+
+
+                    <QuestionDiv>
+
+                        <QuestionsText>
+
+                        </QuestionsText>
+
+                    </QuestionDiv>
+
+
+
+                    <OptionsDiv>
+
+                        <OptionsText>
+
+                        </OptionsText>
+
+                    </OptionsDiv>
+
+                </QuestionContainer>
+
+
+
                <VoteButtonContainer>
 
-                   <VoteButton onClick = {}></VoteButton>
+                   <VoteButton onClick = {() => voteForA()}>Vote</VoteButton>
+                   <VoteButton onClick = {() => voteForB()}>Vote</VoteButton>
 
                </VoteButtonContainer>
 

@@ -1,5 +1,7 @@
 import {StyledPageTitle, StyledSubText, TitleContainer} from "../../Styles"
 import styled from "styled-components";
+import {Comparison} from "@/types";
+import ComparisonCard from "@/Components/ComparisonCard";
 const StyledMain = styled.div`
 
     align-items: center;
@@ -32,6 +34,8 @@ const ComparisonCardContainer = styled.div`
 `
 export default function Leaderboard(){
 
+    // Fetch the array of Data.
+    //
     return(
 
         <StyledMain>
@@ -53,6 +57,15 @@ export default function Leaderboard(){
 
 
             <ComparisonCardContainer>
+
+                {
+                    // Map over the data, each post is a comparison type
+                    fetchedData.data.map((post: Comparison) => (
+                        <ComparisonCard key={post.id} {...post}/> // key is id, then pass over all other attributes
+                    ))
+
+
+                }
 
             </ComparisonCardContainer>
 
