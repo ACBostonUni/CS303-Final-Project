@@ -41,3 +41,37 @@ export const StyledSubText = styled.p`
         font-size: calc(10px + 1.1vw);
 }
 `
+
+
+
+export const StyledCardDiv = styled.div`
+    
+    width: 30%;
+    height: 45%;
+    padding: 1%;
+    margin: auto;
+    
+    background-color: #fafafa;
+    border: transparent;
+    border-radius: 30px;
+    
+    
+`
+
+export const VoteButtonContainer = styled.div`
+
+    width: 90%;
+    height: 30%;
+
+`
+export const VoteButton = styled.button`
+    
+    width: 20%;
+    height: 20%;
+    
+    background-color: lightskyblue;
+    border: transparent;
+    border-radius: 30px;
+;
+
+`

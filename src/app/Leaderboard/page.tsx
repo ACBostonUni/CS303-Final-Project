@@ -52,7 +52,9 @@ export default function Leaderboard(){
 
 
 
+            <ComparisonCardContainer>
 
+            </ComparisonCardContainer>
 
         </StyledMain>
 
