@@ -9,7 +9,7 @@ export const TitleContainer = styled.div`
   text-align: center;
   padding: 2%;
   width: 70%;
-  margin: 0.5% auto;
+  margin: 0 auto;
   
   border: transparent;
   border-radius: 30px;
@@ -22,7 +22,7 @@ export const StyledPageTitle = styled.h2`
   font-family: "DEM-MO-Proportional", sans-serif;
     color: #171717;
   font-size: calc(11px + 2vw);
-  margin: 1% auto 2.5% auto;
+  margin: 0.5% auto 2.5% auto;
 
     @media screen and (max-width: 1400px){
         font-size: calc(20px + 2vw);
@@ -45,54 +45,80 @@ export const StyledSubText = styled.p`
 
 
 export const StyledCardDiv = styled.div`
-    
-    width: 30%;
+
+    width: 45%;
     height: 45%;
     padding: 1%;
     margin: auto;
-    
-    background-color: #fafafa;
-    border: transparent;
+
+    background-color: #F8FCFF;
+    border: darkslategray 3px solid;
     border-radius: 30px;
-    
-    
+
+
 `
 
 export const VoteButtonContainer = styled.div`
 
     width: 90%;
     height: 30%;
+    margin: 9% auto 2% auto;
 
 `
 export const VoteButton = styled.button`
     
     width: 20%;
-    height: 20%;
+    height: 30%;
+    padding: 2%;
     
-    background-color: lightskyblue;
+    background-color: #93dfff ;
     border: transparent;
     border-radius: 30px;
+    margin: 0 12%;
+    
+    font-family: "Meiryo", sans-serif;
+    font-size: calc(4px + 1.1vw);
+    font-weight: bold;
 
 
 `
 
-export const QuestionContainer = styled.div` 
+export const QuestionContainer = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 5% auto 0 auto;
     
 `
 
 export const QuestionDiv = styled.div`
 
+    margin: 0 auto;
+    width: 30%
+    
 `
 
 export const OptionsDiv = styled.div`
 
+    margin: 0 auto;
 
 `
 
 export const OptionsText = styled.p`
 
-
+    color: #171717;
+    font-size: calc(5px + 1.2vw);
+    font-family: "Lucida Sans", sans-serif;
+    font-weight: bold;
+    
+    
 `
 
-export const QuestionsText = styled.p``
+export const QuestionsText = styled.p`
+
+    color: #171717;
+    font-size: calc(4px + 1.1vw);
+    font-family: Arial, Helvetica, sans-serif;
+
+`
 

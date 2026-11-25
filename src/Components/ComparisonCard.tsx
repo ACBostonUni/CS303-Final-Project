@@ -61,7 +61,7 @@ import {Comparison} from "@/types";
                     <OptionsDiv>
 
                         <OptionsText>
-
+                            {optionA}
                         </OptionsText>
 
                     </OptionsDiv>
@@ -70,7 +70,7 @@ import {Comparison} from "@/types";
                     <QuestionDiv>
 
                         <QuestionsText>
-
+                            {question}
                         </QuestionsText>
 
                     </QuestionDiv>
@@ -80,7 +80,7 @@ import {Comparison} from "@/types";
                     <OptionsDiv>
 
                         <OptionsText>
-
+                            {optionB}
                         </OptionsText>
 
                     </OptionsDiv>
@@ -91,8 +91,8 @@ import {Comparison} from "@/types";
 
                <VoteButtonContainer>
 
-                   <VoteButton onClick = {() => voteForA()}>Vote</VoteButton>
-                   <VoteButton onClick = {() => voteForB()}>Vote</VoteButton>
+                   <VoteButton type = "button" onClick = {() => voteForA()}>Vote</VoteButton>
+                   <VoteButton type = "button" onClick = {() => voteForB()}>Vote</VoteButton>
 
                </VoteButtonContainer>
 

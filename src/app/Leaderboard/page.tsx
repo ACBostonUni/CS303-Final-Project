@@ -7,9 +7,8 @@ const StyledMain = styled.div`
     align-items: center;
     text-align: center;
     background: linear-gradient(to bottom, #fafafa 12%, #93dfff 100%);
-    padding: 2% 0;
-    height: 100vh;
-
+    padding: 1% 2%;
+    height: 100%;
     width: 100%;
 
 `
@@ -17,13 +16,14 @@ const StyledMain = styled.div`
 
 const ComparisonCardContainer = styled.div`
 
-    width: 80%;
-    height: 90%;
+    width: 90%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
+    margin: 0 auto 9% auto;
+    padding: 2%;
     
     background: #fafafa;
     border: transparent;
@@ -60,12 +60,14 @@ export default function Leaderboard(){
 
                 {
                     // Map over the data, each post is a comparison type
-                    fetchedData.data.map((post: Comparison) => (
-                        <ComparisonCard key={post.id} {...post}/> // key is id, then pass over all other attributes
-                    ))
+                    //fetchedData.data.map((post: Comparison) => (
+                       // <ComparisonCard key={post.id} {...post}/> // key is id, then pass over all other attributes
+                    //))
 
-
+                    // ^^^ Commented out for now, made an example data item below
                 }
+
+                <ComparisonCard id={1} optionA={"Porsche"} optionB={"Tesla"} question={"Which would you rather have?"} votedCountA={1} votedCountB={2}/>
 
             </ComparisonCardContainer>
 
